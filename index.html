@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" data-svelte="svelte-eee0ci">
+    <meta charset="UTF-8" data-svelte="svelte-eee0ci">
+    <style data-svelte="svelte-eee0ci">
+        @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+
+        html {
+
+            /* Colors */
+            --color-accent: #ffc329;
+
+            /* Default property values */
+            --background: white;
+            --color: #222;
+            --padding: 0;
+            --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+            --border-radius: 8px;
+            --max-width: 100%;
+            --border-color: #CBCACE;
+            --transition-time: 0.1s;
+            --transition: var(--transition-time) color,
+                var(--transition-time) background-color,
+                var(--transition-time) border-color,
+                var(--transition-time) text-decoration-color,
+                var(--transition-time) box-shadow, var(--transtion-time) transform;
+        }
+
+        .primo-page {
+            font-family: system-ui, sans-serif;
+            color: var(--color);
+            line-height: 1.6;
+            font-size: 1.25rem;
+            background: var(--background);
+        }
+
+        .primo-section .primo-content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: var(--padding);
+        }
+
+        .primo-section .primo-content img {
+            width: 100%;
+            margin: 2rem 0;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius);
+        }
+
+        .primo-section .primo-content p {
+            padding: 0.25rem 0;
+            line-height: 1.5;
+        }
+
+        .primo-section .primo-content a {
+            text-decoration: underline;
+        }
+
+        .primo-section .primo-content a:hover {
+            color: var(--color-accent);
+        }
+
+        .primo-section .primo-content h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .primo-section .primo-content h2 {
+            font-size: 2.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .primo-section .primo-content h3 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .primo-section .primo-content ul {
+            list-style: disc;
+            padding: 0.5rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .primo-section .primo-content ol {
+            list-style: decimal;
+            padding: 0.5rem 0;
+            padding-left: 1.25rem;
+        }
+
+        .primo-section .primo-content blockquote {
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius);
+        }
+
+        .section-container {
+            max-width: var(--max-width, 1200px);
+            margin: 0 auto;
+            padding: 3rem var(--padding, 1rem);
+        }
+
+        .heading {
+            font-size: 3rem;
+            line-height: 1;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .button {
+            color: white;
+            background: var(--color-accent);
+            border-radius: 5px;
+            padding: 8px 20px;
+            transition: var(--transition);
+        }
+
+        .button:hover {
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .button.inverted {
+            background: transparent;
+            color: var(--color-accent);
+            border: 2px solid var(--color-accent);
+        }
+
+        @media screen and (max-width: 700px) {
+            .heading {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body id="page">
+
+    <style>
+        .section-container.svelte-n4u5il.svelte-n4u5il {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            background-size: cover
+        }
+
+        .content.svelte-n4u5il.svelte-n4u5il {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            height: min(400px, 80vh);
+            place-content: center;
+            text-align: center;
+            gap: 0.5rem;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAABZJREFUGFdjZEADjFD+fyjNiFMArhEARd4CBSFQSzYAAAAASUVORK5CYII=) rgba(0, 0, 0, 0.3)
+        }
+
+        .content.svelte-n4u5il .social-links.svelte-n4u5il {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem
+        }
+
+        .content.svelte-n4u5il a.svelte-n4u5il {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem
+        }
+
+        .content.svelte-n4u5il a.svelte-n4u5il:hover {
+            color: var(--color-accent)
+        }
+
+        @media(min-width: 700px) {
+            .section-container.svelte-n4u5il.svelte-n4u5il {
+                gap: 5rem
+            }
+
+            .section-container.svelte-n4u5il .content.svelte-n4u5il {
+                gap: 1rem
+            }
+        }
+    </style>
+    <div class="section has-component" id="xbygp">
+        <div class="component">
+            <section class="section-container svelte-n4u5il" style="background-image:url('https://zzyumdkmbkvyfpswmpyz.supabase.co/storage/v1/object/public/sites/coming-soon/assets/thermoprosopsi.jpg')">
+                <div class="content svelte-n4u5il">
+                    <h2 class="heading">ΜΥΤΚΟΛΛΙ ΚΑΤΑΣΚΕΥΑΣΤΙΚΗ</h2>
+                    <div class="body">
+                        <!-- HTML_TAG_START -->Ιστοσελίδα υπό κατασκευή
+                        <!-- HTML_TAG_END -->
+                    </div>
+                    <div class="social-links svelte-n4u5il"><a href="#" class="svelte-n4u5il"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi">
+                                <!-- HTML_TAG_START -->
+                                <path fill="currentColor" d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02Z" /><!-- HTML_TAG_END -->
+                            </svg>
+                            <span>fb.com/mytkolliconstructions</span>
+                        </a><a href="#" class="svelte-n4u5il"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi">
+                                <!-- HTML_TAG_START -->
+                                <path fill="currentColor" d="M21.35 11.1h-9.17v2.73h6.51c-.33 3.81-3.5 5.44-6.5 5.44C8.36 19.27 5 16.25 5 12c0-4.1 3.2-7.27 7.2-7.27c3.09 0 4.9 1.97 4.9 1.97L19 4.72S16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12c0 5.05 4.13 10 10.22 10c5.35 0 9.25-3.67 9.25-9.09c0-1.15-.15-1.81-.15-1.81Z" /><!-- HTML_TAG_END -->
+                            </svg>
+                            <span>Βρείτε μας</span>
+                        </a><a href="mail:mytkolli_ee@yahoo.com" class="svelte-n4u5il"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi">
+                                <!-- HTML_TAG_START -->
+                                <path fill="currentColor" d="M12 15c.81 0 1.5-.3 2.11-.89c.59-.61.89-1.3.89-2.11c0-.81-.3-1.5-.89-2.11C13.5 9.3 12.81 9 12 9c-.81 0-1.5.3-2.11.89C9.3 10.5 9 11.19 9 12c0 .81.3 1.5.89 2.11c.61.59 1.3.89 2.11.89m0-13c2.75 0 5.1 1 7.05 2.95C21 6.9 22 9.25 22 12v1.45c0 1-.35 1.85-1 2.55c-.7.67-1.5 1-2.5 1c-1.2 0-2.19-.5-2.94-1.5c-1 1-2.18 1.5-3.56 1.5c-1.37 0-2.55-.5-3.54-1.46C7.5 14.55 7 13.38 7 12c0-1.37.5-2.55 1.46-3.54C9.45 7.5 10.63 7 12 7c1.38 0 2.55.5 3.54 1.46C16.5 9.45 17 10.63 17 12v1.45c0 .41.16.77.46 1.08c.3.31.65.47 1.04.47c.42 0 .77-.16 1.07-.47c.3-.31.43-.67.43-1.08V12c0-2.19-.77-4.07-2.35-5.65S14.19 4 12 4c-2.19 0-4.07.77-5.65 2.35S4 9.81 4 12c0 2.19.77 4.07 2.35 5.65S9.81 20 12 20h5v2h-5c-2.75 0-5.1-1-7.05-2.95C3 17.1 2 14.75 2 12s1-5.1 2.95-7.05C6.9 3 9.25 2 12 2Z" /><!-- HTML_TAG_END -->
+                            </svg>
+                            <span>Στείλτε μας email</span>
+                        </a><a href="tel:2107627138" class="svelte-n4u5il"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi">
+                                <!-- HTML_TAG_START -->
+                                <path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02l-2.2 2.2Z" /><!-- HTML_TAG_END -->
+                            </svg>
+                            <span>210 7627 138</span>
+                        </a></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <script type="module">
+        const [{
+            default: App
+        }, data] = await Promise.all([
+            import('/_modules/onhzc.js'),
+            fetch('/en.json').then(res => res.json())
+        ]).catch(e => console.error(e))
+        new App({
+            target: document.querySelector('#xbygp'),
+            hydrate: true,
+            props: {
+                ...data,
+                ...data['index'],
+                ...data['index']['xbygp']
+            }
+        })
+    </script>
+</body>
+
+</html>
